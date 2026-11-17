@@ -64,14 +64,27 @@ The Diagnosis Agent **only suggested** this fix. It did not edit the file or rer
 
 **Current status:** Tasks 1–3 are complete as a controlled prototype. Neither research gap has been experimentally validated yet, because we have not repaired and rerun a broken experiment.
 
-## Project files
+## Project Files
 
 | File | Purpose |
-| --- | --- |
-| `RE-SOURCE AI Task 1: Reference Experiment.ipynb` | Task 1: working baseline |
-| `RE:SOURCE AI Task2 Broken Experiment.ipynb` | Task 2: controlled failure |
-| `RE:SOURCE AI Task3 Diagnosis Agent.ipynb` | Task 3: Standalone Python diagnosis tool |
+|---|---|
+| `RE-SOURCE AI Task 1: Reference Experiment.ipynb` | Task 1: Create a working Random Forest model and save the baseline results. |
+| `RE:SOURCE AI Task2 Broken Experiment.ipynb` | Task 2: Introduce a controlled error and record the failure. |
+| `RE:SOURCE AI Task3 Diagnosis Agent.ipynb` | Task 3: Diagnose the error, identify its cause, and generate a structured report. |
 
-**All reports are saved in JSON format when you run the colab code it will shows in the sidebar where we can see and observe the reports.**
+### Generated Reports
 
-**Platform:** Python, Scikit-learn, and Google Colab (CPU). No GPU or paid API is required for Tasks 1–3.
+The notebooks generate reports in JSON format, along with supporting files such as error logs.
+
+After executing the code in **Google Colab**, open the **Files sidebar (folder icon)** to view and download the generated reports.
+
+**Note:** Files stored in the Colab runtime are temporary. Download the reports before ending your session.
+
+### Development Environment
+
+- **Programming Language:** Python
+- **ML Framework:** Scikit-learn
+- **Development Platform:** Google Colab (CPU)
+- **Requirements:** No GPU or paid API required for Tasks 1–3.
+
+**Current Progress:** The reference experiment, controlled failure, and rule-based Diagnosis Agent have been completed. Automatic repair and scientific result verification are the next development stages.
