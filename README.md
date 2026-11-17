@@ -50,17 +50,17 @@ The Diagnosis Agent **only suggested** this fix. It did not edit the file or rer
 
 ## What we will do next
 
-**Task 4 — Repair Agent:** Apply an approved fix to a *copy* of the broken script, then rerun it. Keep the original reference untouched.
+**Task 4 - Repair Agent:** Apply an approved fix to a *copy* of the broken script, then rerun it. Keep the original reference untouched.
 
-**Task 5 — Scientific verification:** Compare the repaired experiment with Task 1. Check the dataset, preprocessing, train-test split, model parameters, and evaluation results.
+**Task 5 - Scientific verification:** Compare the repaired experiment with Task 1. Check the dataset, preprocessing, train-test split, model parameters, and evaluation results.
 
-**Task 6 — Research tests:** Try additional errors and compare a basic repair workflow against one with scientific verification. Later, expand from Random Forest to ANN, CNN, and RNN/LSTM experiments.
+**Task 6 - Research tests:** Try additional errors and compare a basic repair workflow against one with scientific verification. Later, expand from Random Forest to ANN, CNN, and RNN/LSTM experiments.
 
 ## Research questions
 
-**Gap 1 — Execution vs. reproducibility:** Does the repaired experiment reproduce the original results, not just run successfully?
+**Gap 1 - Execution vs. reproducibility:** Does the repaired experiment reproduce the original results, not just run successfully?
 
-**Gap 3 — Methodology preservation:** Did the repair keep the original scientific settings intact?
+**Gap 2 - Methodology preservation:** Did the repair keep the original scientific settings intact?
 
 **Current status:** Tasks 1–3 are complete as a controlled prototype. Neither research gap has been experimentally validated yet, because we have not repaired and rerun a broken experiment.
 
@@ -68,10 +68,10 @@ The Diagnosis Agent **only suggested** this fix. It did not edit the file or rer
 
 | File | Purpose |
 | --- | --- |
-| `RE_SOURCE_AI_Day1_Colab.ipynb` | Task 1: working baseline |
-| `RE_SOURCE_AI_Day1_Task2_Broken_Experiment.ipynb` | Task 2: controlled failure |
-| `RE_SOURCE_AI_Task3_Diagnosis_Agent_Colab.ipynb` | Task 3: guided diagnosis in Google Colab |
-| `RE_SOURCE_AI_Task3_Diagnosis_Agent.py` | Standalone Python diagnosis tool |
-| `RE_SOURCE_AI_Task3_Example_Diagnosis.json` | Example diagnosis output |
+| `RE-SOURCE AI Task 1: Reference Experiment.ipynb` | Task 1: working baseline |
+| `RE:SOURCE AI Task2 Broken Experiment.ipynb` | Task 2: controlled failure |
+| `RE:SOURCE AI Task3 Diagnosis Agent.ipynb` | Task 3: Standalone Python diagnosis tool |
+
+**All reports are saved in JSON format when you run the colab code it will shows in the sidebar where we can see and observe the reports.**
 
 **Platform:** Python, Scikit-learn, and Google Colab (CPU). No GPU or paid API is required for Tasks 1–3.
